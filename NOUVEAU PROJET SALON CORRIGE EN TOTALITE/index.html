@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Créa'Tif - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <script defer src="script.js"></script>
+  <script defer src="form.js"></script>
+</head>
+
+<body>
+
+  <!-- Header / Nav -->
+  <header>
+    <div class="logo">Créa'Tif</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="coiffeur.html">Coiffeurs</a>
+      <a href="barbier.html">Barbiers</a>
+      <a href="rdv.html">Prendre RDV</a>
+    </nav>
+    <div class="burger" aria-label="menu">☰</div>
+  </header>
+
+
+  <!-- Cookie banner -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-hidden="true">
+    <p>
+      Ce site web utilise des cookies.<br />
+      Les cookies nous permettent de personnaliser le contenu et les annonces, d'offrir des fonctionnalités relatives aux médias sociaux et d'analyser notre trafic.
+      Nous partageons également des informations sur l'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d'analyse,
+      qui peuvent combiner celles-ci avec d'autres informations que vous leur avez fournies ou qu'ils ont collectées lors de votre utilisation de leurs services.
+      <br><br>
+      <strong>Refuser les cookies :</strong> En refusant les cookies, vous quitterez alors notre site.
+      <br><br>
+      Pour en savoir plus, consultez notre
+      <a href="confidentialite.html" target="_blank">politique de confidentialité</a>.
+    </p>
+
+    <div class="cookie-buttons">
+      <button id="accept-cookies">Accepter</button>
+      <button id="decline-cookies">Refuser</button>
+    </div>
+  </div>
+
+  <button id="manage-cookies" class="manage-cookies" aria-hidden="true">Gérer les cookies</button>
+
+
+
+  <!-- Slider -->
+  <section class="slider" id="slider">
+
+    <div class="slide" style="background-image:url('img/barbier-1.jpg');">
+      <h2>Bienvenue chez Créa'tif</h2>
+      <p>Votre destination pour un rasage traditionnel et une coupe sur mesure. Laissez-nous sublimer votre apparence tout en vous offrant un moment de détente.</p>
+    </div>
+
+    <div class="slide" style="background-image:url('img/barbier-2.jpg');">
+      <h2>Créa'Tif : Votre espace de coiffure sur mesure</h2>
+      <p>Découvrez un univers où l'art de la coiffure rencontre la créativité.</p>
+    </div>
+
+    <div class="slide" style="background-image:url('img/barbier-4.jpg');">
+      <h2>Prestations personnalisées</h2>
+      <p>Coupe, coloration, mèches, soins ou rasage traditionnel : chaque prestation est adaptée à vos envies.</p>
+    </div>
+
+  </section>
+
+
+
+  <!-- Services -->
+  <section class="services">
+
+    <article class="service">
+      <img src="img/cct.jpg" alt="Coupe homme/femme" />
+      <div class="overlay"><a href="coiffeur.html">Découvrir</a></div>
+    </article>
+
+    <article class="service">
+      <img src="img/coiffeur-1.jpg" alt="Coloration" />
+      <div class="overlay"><a href="coiffeur.html">Découvrir</a></div>
+    </article>
+
+    <article class="service">
+      <img src="img/barbier-3.jpg" alt="Barbier" />
+      <div class="overlay"><a href="barbier.html">Découvrir</a></div>
+    </article>
+
+  </section>
+
+
+
+  <!-- Équipe -->
+  <section class="team">
+    <h3>Notre équipe</h3>
+
+    <p>
+      Coupe homme et femme, colorations naturelles, techniques de mèches et balayage,
+      soins capillaires sur mesure ou rasage traditionnel : notre équipe met son expertise à votre service.
+    </p>
+
+    <div class="team-grid">
+      <figure>
+        <img src="img/index-5.jpg" alt="Paul - Coiffeur/Barbier">
+        <figcaption>Paul — Coiffeur / Barbier</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/index-6.jpg" alt="Julie - Coiffeuse">
+        <figcaption>Julie — Coiffeuse</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/index-7.jpg" alt="Alex - Coiffeuse">
+        <figcaption>Alex — Coiffeuse</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/index-8.jpg" alt="Rémy - Coiffeur/Barbier">
+        <figcaption>Rémy — Coiffeur / Barbier</figcaption>
+      </figure>
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <nav class="footer-links">
+      <a href="confidentialite.html">Politique de confidentialité</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </nav>
+
+    <p>© 2025 Créa'Tif — Peyrolles-en-Provence</p>
+  </footer>
+
+</body>
+</html>

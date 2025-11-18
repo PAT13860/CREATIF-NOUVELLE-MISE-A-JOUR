@@ -1,0 +1,75 @@
+/* style.css - thème clair / doré pour Créa'Tif */
+
+/* Reset simple */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:Roboto,Arial,sans-serif;background:#fef9f4;color:#222;line-height:1.5}
+
+/* Header */
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#fff8f0;box-shadow:0 2px 5px rgba(0,0,0,0.05)}
+.logo{font-family:'Qwitcher Grypen',cursive;color:#d4a373;font-size:1.8rem}
+nav a{margin-left:16px;color:#333;text-decoration:none;font-weight:500}
+
+/* Burger (mobile) */
+.burger{display:none;cursor:pointer}
+
+/* Slider */
+.slider{position:relative;display:flex;overflow:hidden;height:380px}
+.slide{min-width:100%;background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:30px;color:#fff}
+.slide h2{font-size:2rem;background:rgba(0,0,0,0.45);padding:10px 14px;border-radius:6px}
+.slide p{margin-top:8px;background:rgba(0,0,0,0.32);padding:6px 10px;border-radius:5px}
+
+/* Services gallery */
+.services{display:flex;gap:16px;padding:36px}
+.service{flex:1;position:relative;overflow:hidden;border-radius:8px}
+.service img{width:100%;height:220px;object-fit:cover;transition:transform .45s}
+.service:hover img{transform:scale(1.08)}
+.overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;background:rgba(0,0,0,0.25);opacity:0;transition:opacity .3s}
+.service:hover .overlay{opacity:1}
+
+/* Team grid */
+.team{padding:30px}
+.team-grid{display:flex;gap:14px;flex-wrap:wrap}
+.team-grid figure{width:23%;text-align:center}
+.team-grid img{width:100%;border-radius:8px}
+
+/* Parallax */
+.parallax{height:360px;background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,0.6)}
+
+/* Forms */
+form{max-width:520px;margin:30px auto;background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.form-group{margin-bottom:12px}
+label{display:block;margin-bottom:6px;font-weight:700}
+input[type="text"],input[type="password"],input[type="email"]{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px}
+
+/* Buttons */
+button{background:#d4a373;color:#fff;border:0;padding:10px 14px;border-radius:6px;cursor:pointer}
+button[disabled]{opacity:.5;cursor:not-allowed}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.45);z-index:200}
+.modal .modal-content{background:#fff;padding:20px;border-radius:8px;max-width:420px;width:90%}
+.modal.show{display:flex}
+
+/* Footer */
+footer{background:#fff8f0;padding:20px;text-align:center;margin-top:30px}
+.footer-links{display:flex;gap:12px;justify-content:center;margin-bottom:8px}
+.footer-links a{text-decoration:none;color:#333}
+
+/* Cookie banner (see HTML) */
+.cookie-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:20px;background:#111;color:#fff;padding:14px;border-radius:8px;display:none;z-index:1000;width:calc(100% - 40px);max-width:980px}
+.cookie-banner p{margin-right:12px}
+.cookie-buttons{display:inline-flex;gap:8px}
+.manage-cookies{position:fixed;bottom:18px;right:18px;background:#555;color:#fff;padding:8px 12px;border-radius:6px;display:none;z-index:999}
+
+/* Utilities */
+.hidden{display:none}
+
+/* Small screens */
+@media (max-width:768px){
+  .services{flex-direction:column;padding:20px}
+  .team-grid figure{width:48%}
+  .burger{display:block}
+  nav{display:none}
+  .cookie-banner{left:10px;transform:none;width:calc(100% - 20px)}
+}

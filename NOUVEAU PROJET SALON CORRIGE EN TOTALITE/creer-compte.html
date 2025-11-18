@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Créa'Tif - Créer un compte</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <script defer src="script.js"></script>
+  <script defer src="form.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Créa'Tif</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="coiffeur.html">Coiffeurs</a>
+      <a href="barbier.html">Barbiers</a>
+      <a href="rdv.html">Prendre RDV</a>
+    </nav>
+    <div class="burger">☰</div>
+  </header>
+
+  <main>
+    <h2>Créer un compte</h2>
+    <form id="createForm" action="traitement.html" method="get" novalidate>
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input id="nom" name="nom" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="prenom">Prénom</label>
+        <input id="prenom" name="prenom" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="emailCreate">Email</label>
+        <input id="emailCreate" name="emailCreate" type="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pwCreate">Mot de passe</label>
+        <input id="pwCreate" name="pwCreate" type="text" required>
+        <button id="genPw" type="button">Générer mot de passe</button>
+      </div>
+
+      <button id="createSubmit" disabled>Valider</button>
+    </form>
+  </main>
+
+  <footer>
+    <nav class="footer-links">
+      <a href="confidentialite.html">Politique de confidentialité</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </nav>
+    <p>© 2025 Créa'Tif — Peyrolles-en-Provence</p>
+  </footer>
+</body>
+</html>

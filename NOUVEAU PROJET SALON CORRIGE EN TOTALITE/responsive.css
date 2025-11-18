@@ -1,0 +1,9 @@
+/* responsive.css - ajustements supplémentaires */
+
+/* breakpoint unique desktop→mobile (768px) déjà géré, ajout mineur pour très petits écrans */
+@media (max-width:480px){
+  .slide h2{font-size:1.1rem;padding:8px}
+  .team-grid figure{width:100%}
+  .services .service img{height:180px}
+  .cookie-banner{font-size:0.9rem;padding:10px}
+}
